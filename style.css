@@ -1,0 +1,175 @@
+.header{
+    background-color: #6d6666;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+
+.body1 {
+    background-image: url('img/598369319_122093773851172310_2952091912590101988_n.jpg');
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;    
+
+    padding: 0%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.body2{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #b4adad;
+
+}
+
+.body2 img{
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    padding: 6px;           /* Khoảng đệm giữa ảnh và đường viền */
+    border: 2px solid #b4adad; 
+    border-radius: 10px ;
+}
+.body2 .img1{
+    flex 4;
+    min-width: 0;
+}
+.body2 .img2{
+    flex 1;
+    min-width: 0;
+}
+.div1{
+    background-color: #b4adad;
+    padding: 2% 5%;
+    margin: 3%;
+    border-radius: 10px;
+
+    text-align: justify;
+    justify-content: center;
+}
+.div2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 3%;
+    padding: 1% 3%; 
+    margin: 3%;
+    background-color: #eedab5;
+    border-radius: 10px;
+    
+    justify-content: center;
+    text-align: justify;
+}
+.div3{
+    background-color: #855b5b;
+    padding: 2% 5%;
+    margin: 3%;
+    border-radius: 10px;
+    
+    text-align: justify;
+    justify-content: center;
+}
+.black-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 70%;
+    height: 65%;
+    background-color: rgba(0, 0, 0, 0.8);          
+    color: white;                     
+    
+    text-align: center;
+    text-decoration: underline;
+    gap: 1px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.big-text{
+    font-size: 400%;
+    margin: 0;
+}
+.small-text{
+    font-size: 156%;
+    margin: 0;
+}
+.nav1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+.btn-link:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+.btn-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ffffff;   /* Màu nền của nút */
+    color: #333333;             /* Màu chữ của link */
+    text-decoration: none;      /* Xóa dấu gạch chân xanh mặc định của link <a> */
+    border-radius: 4px;         /* Bo tròn nhẹ 4 góc nút */
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+.skip-link {
+    position: absolute;
+    top: -100px;              /* Kéo nút lên phía trên ngoài khung nhìn */
+    left: 0;
+    background-color: #000;    /* Màu nền đen */
+    color: #fff;              /* Màu chữ trắng */
+    padding: 10px 16px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1000;             /* Đảm bảo nằm đè lên mọi phần tử khác khi xuất hiện */
+    transition: top 0.2s ease; /* Tạo hiệu ứng trượt xuống mượt mà */
+}
+.skip-link:focus {
+    top: 0;                   /* Đưa nút trượt lại về mép trên cùng của màn hình */
+    outline: 2px solid #ff4d4d; /* Thêm đường viền nổi bật để dễ quan sát */
+}
+
+footer {
+    background-color: #362323;
+    color: #f0f0f0;
+    padding: 3% 5% 1% 5%;
+    margin-top: 5%;
+}
+.footer-col h3 {
+    color: #eedab5; /* Màu vàng kem làm điểm nhấn tiêu đề */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.image-gal {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.image-gal img{
+    box-sizing: border-box;
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+
+    padding: 6px;           /* Khoảng đệm giữa ảnh và đường viền */
+    border: 2px solid #b81c24; /* Đường viền màu đỏ đô */
+    border-radius: 10px ;
+    background-color: #fff;
+    margin: auto;
+}
